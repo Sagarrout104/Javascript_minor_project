@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turn On and off the light</title>
+</head>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: #313131;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+    }
+</style>
+<body>
+
+    <div class="container">
+        <button class="on">Turn On</button>
+        <img src="https://www.w3schools.com/js/pic_bulboff.gif" alt="">
+        <button class="off">Turn Off</button>
+    </div>
+
+    <script>
+        const on = document.querySelector('.on');
+        const off = document.querySelector('.off');
+        const img = document.querySelector('img');
+
+        on.addEventListener('click',()=>{
+            console.log('on');
+            // img.setAttribute('src','https://www.w3schools.com/js/pic_bulbon.gif')
+            // console.dir(img);
+            img.src='https://www.w3schools.com/js/pic_bulbon.gif'
+        })
+
+        off.addEventListener('click',()=>{
+            console.log('off');
+            // img.setAttribute('src','https://www.w3schools.com/js/pic_bulboff.gif')
+            img.src='https://www.w3schools.com/js/pic_bulboff.gif';
+
+        })
+
+    </script>
+</body>
+</html>

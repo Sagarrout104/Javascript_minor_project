@@ -1,0 +1,22 @@
+body{
+
+    background-color: #313131;
+  }
+  
+.container{
+    text-align: center;
+    margin-top:200px;
+    color: rgb(247, 245, 240);
+
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    color: bisque;
+    background-color: #3d3b3b;
+    box-shadow: 0 0 5px rgb(164, 105, 115);
+}
+  
+  
+  
